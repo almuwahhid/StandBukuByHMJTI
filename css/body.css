@@ -1,0 +1,12 @@
+@media(max-height:667px){
+	body{
+			background:url(../img/background.PNG);
+			background-attachment:fixed;
+	}
+}
+@media(min-height:668px){
+	body{
+			background:url(../img/background-768.png);
+			background-attachment:fixed;
+	}
+}

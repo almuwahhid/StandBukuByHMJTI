@@ -1,0 +1,312 @@
+-- phpMyAdmin SQL Dump
+-- version 4.2.10.1
+-- http://www.phpmyadmin.net
+--
+-- Host: localhost
+-- Generation Time: Mar 13, 2015 at 11:05 PM
+-- Server version: 5.5.40
+-- PHP Version: 5.4.34
+
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+SET time_zone = "+00:00";
+
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8 */;
+
+--
+-- Database: `db_hmjti`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `listbuku`
+--
+
+CREATE TABLE IF NOT EXISTS `listbuku` (
+`id` int(4) NOT NULL,
+  `judul` varchar(300) NOT NULL,
+  `penerbit` varchar(40) NOT NULL,
+  `pengarang` varchar(70) NOT NULL,
+  `harga` int(7) NOT NULL DEFAULT '0',
+  `diskon` int(3) NOT NULL DEFAULT '0',
+  `jumlah` int(3) NOT NULL DEFAULT '0'
+) ENGINE=InnoDB AUTO_INCREMENT=251 DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `listbuku`
+--
+
+INSERT INTO `listbuku` (`id`, `judul`, `penerbit`, `pengarang`, `harga`, `diskon`, `jumlah`) VALUES
+(1, '101 Tips & Trik Registry Editor "Untuk Meningkatkat Performa Windows"', 'Gava Media', 'MHD.Irzan, Danny Pradana', 27500, 12, 4),
+(2, '15 Cara Menjadi Kaya dari Internet', 'Gava Media', 'Budhi Kristianto', 28500, 12, 4),
+(3, '42 Langkah Praktis Menguasai CorelDRAW', 'Gava Media', 'A.Taufiq H.', 26000, 12, 4),
+(5, '5 hari Menguasai & Lancar Microsoft Office Powerpoint 2007', 'Gava Media', 'A.Taufiq H.', 18000, 12, 4),
+(6, '5 Hari Menguasai dan Lancar Kolaborasi CorelDRAW X3, Photoshop CS3 & Nero Cover Designer', 'Gava Media', 'A.Taufiq H.', 29500, 12, 3),
+(7, '7 Hari Menjadi Jawara di Internet', 'Gava Media', 'Aryya DW', 24500, 12, 4),
+(8, '72 Cara Jitu Menguasai Kolaborasi Adobe InDesaign, Photoshopdan MS.Word ', 'Gava Media', 'A.Taufiq H.', 39500, 12, 4),
+(9, 'Adobe Photoshop CS4 "Secret" editing & Retouching foto', 'Gava Media', 'Rachmad Saleh', 23500, 12, 4),
+(10, 'Akademik Sekolah dengan PHP-MySQL & Dreamweaver : Pemrograman Web Membuat Sistem Informasi', 'Gava Media', 'Bunafit Nugroho', 105000, 12, 3),
+(11, 'Analisis Kolerasi,Regresi,dan Multivariate dengan SPSS', 'Gava Media', 'Duwi Priyatno', 37500, 12, 4),
+(12, 'Aneka Daun Berkhasiat untuk Obat', 'Gava Media', 'Dini Nuris Nuraini', 75000, 12, 4),
+(13, 'Aneka Manfaat Biji-bijian', 'Gava Media', 'Dini Nuris Nuraini', 54500, 12, 4),
+(14, 'Aneka Manfaat Bunga untuk Kesehatan', 'Gava Media', 'Dini Nuris Nuraini', 65000, 12, 4),
+(15, 'Aplikasi Pemrograman Web Dinamis dgn PHP & MySQL', 'Gava Media', 'Bunafit N', 57500, 12, 4),
+(16, 'Aplikasi Sistem Pakar dengan PHP dan Editor Dreamweaver', 'Gava Media', 'Bunafit Nugroho', 54000, 12, 4),
+(17, 'Awas Ada Hacker!', 'Gava Media', 'Firrar U', 29500, 12, 4),
+(18, 'Berani Dipecat !!! Saat Bekerja Sesuai Panggilan Jiwa', 'Gava Media', 'Alviko Ibnugroho', 55000, 12, 4),
+(19, 'Berburu DOLAR dari Internet', 'Gava Media', 'Okki Navarone W', 15500, 12, 4),
+(20, 'Cara Ampuh Melindungi&Menyelamatkan Data Penting +CD', 'Gava Media', 'A.Taufiq H.', 33000, 12, 4),
+(21, 'Cara Cepat Belajar Jaringan Infrastruktur Jaringan Wireless', 'Gava Media', 'Syamsudin', 34500, 12, 3),
+(22, 'Cara Cepat Membuat Sendiri Toko Online menggunakan osCommerce', 'Gava Media', 'Efvy Z', 26500, 12, 4),
+(23, 'Cara Mudah Belajar Metode Optimisasi Metaheuristik Menggunakan Matlab', 'Gava Media', 'Hindriyanto Dwi Purnomo', 63000, 12, 4),
+(24, 'Cara Mudah Blogging Gratis', 'Gava Media', 'Duwi Priyatno', 29500, 12, 4),
+(25, 'Cara Mudah dan Cepat Menguasai Adobe InDesaign CS', 'Gava Media', 'Selly Rahmawati', 32000, 12, 4),
+(26, 'Cara Mudah DESAIN ANIMASI Menggunakan 3Ds Max Untuk Pemula dan Tingkat Lanjut', 'Gava Media', 'Drs.H.Widada HR', 42500, 12, 3),
+(27, 'Cara Mudah Editing Video dengan UNLEAD STUDIO VIDEO', 'Gava Media', 'Drs.H.Widada HR', 36000, 12, 4),
+(28, 'Cara Mudah Kreasi Fotografi plus Editing Image', 'Gava Media', 'Drs. Widada M.Kom', 58000, 12, 4),
+(29, 'Cara Mudah Melakukan Analisa Statistik dgn SPSS', 'Gava Media', 'Teguh W', 26500, 12, 4),
+(30, 'Dasar Pemrograman Web PHP-MySQL dengan Dreamweaver', 'Gava Media', 'Bunafit Nugroho', 79500, 12, 4),
+(31, 'Humor Cerdas', 'Gava Media', 'A. Hubba Z ', 29000, 12, 4),
+(32, 'Instant Hacking', 'Gava Media', 'Efvy Zamidra', 29000, 12, 4),
+(33, 'Jaringan Komputer Teori & Implementasi Berbasis Linux', 'Gava Media', 'Wagito', 44900, 12, 2),
+(34, 'Keajaiban Senyuman', 'Gava Media', 'Saikhul Hadi', 36000, 12, 4),
+(35, 'Keamanan Data Pada Jaringan Komputer', 'Gava Media', 'Andri K', 23000, 12, 4),
+(36, 'Kesuburan Tanah Dasar Kesehatan & Kualitas Tanah', 'Gava Media', 'Sugeng W', 39900, 12, 4),
+(37, 'Kolaborasi Mantap PHP+Jquery dg IBM DB2 & MySQL + DVD', 'Gava Media', 'Riyanto', 96000, 12, 4),
+(38, 'Langsung Lancar Mengolah Teks Artistik&Gambar 3D dg Adobe Photoshop cs4', 'Gava Media', 'A.Taufiq H.', 23000, 12, 4),
+(39, 'Latihan Membuat Aplikasi Web PHP&MySQL dg Dreamweaver', 'Gava Media', 'Bunafit.N', 64500, 12, 3),
+(40, 'Logika Informatika', 'Gava Media', 'Suprapto', 29000, 12, 4),
+(41, 'Mahir Memperbaiki dan Merawat NOTEBOOK', 'Gava Media', 'Yulius Eka Agung S', 37500, 12, 4),
+(42, 'Manajemen Kearsipan Elektronik + CD', 'Gava Media', 'Agus Sugiarto & Teguh Wahyono', 56000, 12, 4),
+(43, 'Membangun Server Internet dg Mikrotik OS', 'Gava Media', 'Kustanto', 34000, 12, 4),
+(44, 'Membongkar Source Code berbagai Aplikasi ANDROID', 'Gava Media', 'Ivan Michael Siregar', 68000, 12, 3),
+(45, 'Membongkar Teknologi Pemrograman Web Service', 'Gava Media', 'Ivan Michael Siregar', 43500, 12, 4),
+(46, 'Membongkar Teknologi Pemrograman Web Service Jilid 2', 'Gava Media', 'Ivan Michael Siregar', 43500, 12, 4),
+(47, 'Membuat Aplikasi Database SQL Server dgn Visual Basic 6.0', 'Gava Media', 'Bunafit Nugroho', 49500, 12, 4),
+(48, 'Membuat Aplikasi Mini Market integrasi barcode reader dg PHP&MySQL', 'Gava Media', 'Riyanto', 71000, 12, 4),
+(49, 'Membuat Sendiri Aplikasi Web Store dengan PHP, Jquery & Microsoft SQL Server', 'Gava Media', 'Riyanto', 73000, 12, 4),
+(50, 'Membuat Sendiri Sistem Informasi Penjualan berbasis WEB dg PHP dan PostgresSQL ', 'Gava Media', 'Riyanto', 67000, 12, 4),
+(51, 'Membuat Sendiri WebPortal berbasis Open Source', 'Gava Media', 'Eko Priyono', 31000, 12, 4),
+(52, 'Membuat Sistem Informasi Penjualan Berbasis WEB dg PHP&MySQL', 'Gava Media', 'Bunafit.N', 67000, 12, 4),
+(53, 'Membuat Virus & Anti Virus + CD', 'Gava Media', 'Ahlul Faradish R', 24500, 12, 3),
+(54, 'Membuat Virus & Anti Virus Lanjutan (Be Expert) + CD', 'Gava Media', 'Ahlul Faradish R', 35000, 12, 3),
+(55, 'Menembus Keamanan Komputer', 'Gava Media', 'Efvy Zamidra', 31000, 12, 4),
+(56, 'Mengembangkan Aplikasi Enterpise berbasis ANDROID', 'Gava Media', 'Ivan Michael Siregar', 47500, 12, 4),
+(57, 'Mengolah Foto Digital dengan Photoshop CS3', 'Gava Media', 'A.Taufiq H.', 36000, 12, 4),
+(58, 'Menguasai 45 Efek Dahsyat Photoshop dalam 1 jam', 'Gava Media', 'Aditya, ST', 46000, 12, 4),
+(59, 'Menguasai Desain Grafis dengan Kolaborasi Corel Draw dan Photoshop', 'Gava Media', 'A.Taufiq H.', 37500, 12, 3),
+(60, 'Menguasai Pemrograman Firefox', 'Gava Media', 'Ivan Michael Siregar', 35000, 12, 4),
+(61, 'Nasib Dalam Semangkuk Bubur', 'Gava Media', 'Rachmat Ramadhana', 59500, 12, 4),
+(62, 'Panduan Kreatif Jago Animator dalam Sehari menggunakan SCRATCH', 'Gava Media', 'Drs. Widada M.Kom', 42000, 12, 4),
+(63, 'Panduan Membuat Aplikasi Program Toko berbasis Web dg PHP-MySQL dan Dreamweaver', 'Gava Media', 'Bunafit Nugroho', 92500, 12, 4),
+(64, 'Panduan Membuat Program Toko dengan Visual Basic dan MySQL', 'Gava Media', 'Bunafit Nugroho', 79500, 12, 4),
+(66, 'Pembuatan Software Rekam Medis dengan Java Netbeans+MySQL', 'Gava Media', 'Fita Puspita Sari dkk', 44500, 12, 3),
+(67, 'Pengembangan Aplikasi Berbasis Web dengan PHP & ASP', 'Gava Media', 'Moh. Sulhan', 41000, 12, 4),
+(68, 'Pengembangan Aplikasi Sistem Informasi Geografis Berbasis Dekstop dan Web', 'Gava Media', 'Riyanto,dkk', 61000, 12, 3),
+(69, 'Pengembangan Program W@P Dengan WML & PHP', 'Gava Media', 'Bunafit N', 66500, 12, 4),
+(70, 'Perancangan Sistem Informasi & Aplikasinya ed.Revisi', 'Gava Media', 'Andri K', 30000, 12, 4),
+(71, 'Perancangan WEB Dengan Fireworks & Dreamweaver MX', 'Gava Media', 'Bunafit N', 42500, 12, 4),
+(72, 'PLC Konsep, Pemrograman dan Aplikasi', 'Gava Media', 'Agfianto EP', 38000, 12, 4),
+(73, 'Rahasia dan trik Mengamankan Server Linux', 'Gava Media', 'Alva Hendi M.', 31000, 12, 4),
+(74, 'Rangkaian Digital', 'Gava Media', 'Muchlas', 52500, 12, 4),
+(75, 'Rekayasa Foto Digital dan Teknik Membuat Animasi dengan Adobe Photoshop CS 6 ', 'Gava Media', 'A.Taufiq H.', 39000, 12, 4),
+(76, 'SERBA GRATIS E-mail, Messenger, Blogging, Domain, Hosting, CMS for Blog & E-Comerce ', 'Gava Media', 'Riyanto', 45000, 12, 3),
+(77, 'Sistem Informasi Geografis berbasis Mobile ', 'Gava Media', 'Riyanto', 61500, 12, 4),
+(78, 'Sistem Informasi Penjualan dengan PHPdanMySQL', 'Gava Media', 'Riyanto', 65500, 12, 4),
+(79, 'Struktur Data dan Algoritma', 'Gava Media', 'M.Hasbi', 39500, 12, 4),
+(80, 'Success and Happiness in Life', 'Gava Media', 'Hery Alexander', 30000, 12, 4),
+(81, 'Teknik Hacking Hardware Komputer', 'Gava Media', 'Efvy Zamidra', 23000, 12, 4),
+(82, 'Teknik Mudah dan Cepat Melakukan Analisis Data Penelitian dengan SPSS dan Tanya Jawab Ujian Pendadaran', 'Gava Media', 'Duwi Priyatno', 28000, 12, 4),
+(83, 'Teori dan Pemrograman Grafika Komputer', 'Gava Media', 'Dr. Suyoto', 34900, 12, 4),
+(84, 'Teori E-Commerce Kunci Sukses Perdagangan di Internet', 'Gava Media', 'Jonathan S & Tutty M', 24000, 12, 4),
+(85, 'Tips dan Trik Membasmi & Melindungi Komputer dari Virus Lokal', 'Gava Media', 'Adang Juhar Taufiq', 26000, 12, 4),
+(86, 'Tips Trik Merawat dan Memperbaiki Laptop sendiri', 'Gava Media', 'Rudianto,Teguh W', 25500, 12, 4),
+(87, 'Trik Cepat Kolaborasi PowerPoint & Photoshop dlm Presentasi', 'Gava Media', 'AR. Rizky', 21000, 12, 4),
+(88, 'Trik dan Rahasia Membuat Aplikasi Web dengan PHP', 'Gava Media', 'Bunafit Nugroho', 49500, 12, 4),
+(89, 'Trik Pemrograman Jaringan dengan Visual Basic 6', 'Gava Media', 'Vygoryviva CS', 26000, 12, 4),
+(90, 'Troubleshooting & Optimalisasi Microsoft Windows XP', 'Gava Media', 'Teguh W', 27500, 12, 4),
+(92, 'Visual Basic Membuat Animasi & Tampilan Cantik', 'Gava Media', 'Bunafit N', 33500, 12, 3),
+(93, 'Bikin Aplikasi ANDROID dgn Angular Mobile & MongoDB', 'Lokomedia', 'Agung Julisman', 59000, 15, 0),
+(94, 'Program Absensi Sekolah Realtime dengan PHP dan SMS Gateway', 'Lokomedia', 'Aminudin', 45000, 15, 3),
+(95, 'Super Web Programming 10 Bahasa 10 Proyek Web', 'Lokomedia', 'Fritz Gamaliel', 50000, 15, 3),
+(96, 'Membuat Website Pertemanan dgn PHP & jQuery', 'Lokomedia', 'Akhmad Dharma', 50000, 15, 3),
+(97, 'Membuat Helpdesk Sytem Berbasis OOP dan PDO dengan PHP', 'Lokomedia', 'Hendra Santoso', 50000, 15, 3),
+(98, 'Trik Menguasai PHP + jQuery Berbasis Linux dan Windows', 'Lokomedia', 'Meilan Anastasia', 46500, 15, 3),
+(99, 'Rahasia Inti Master PHP dan MySQLi (improved)', 'Lokomedia', 'Lukmanul Hakim', 65000, 25, 3),
+(100, 'Proyek Website Super WOW! dengan PHP dan jQuery', 'Lokomedia', 'Lukmanul Hakim', 57800, 15, 3),
+(101, 'Proyek Membuat Website Berbasis PHP dengan Codeigniter', 'Lokomedia', 'Awan Pribadi Basuki', 58000, 15, 1),
+(102, 'Proyek Membuat Website dengan Yii Framework', 'Lokomedia', 'Sharive', 65000, 25, 3),
+(103, 'Membuat Web Profil Sekolah + PPDB Online', 'Lokomedia', 'Agus Hariyanto', 48000, 15, 3),
+(104, 'Sistem Aplikasi Travel dengan AngularJS dan Codeigniter', 'Lokomedia', 'Agung Julisman', 50000, 15, 3),
+(105, 'Tip dan Trik Dahsyat Android Ice Cream Sandwich Dan Jelly Bean', 'Andi Publisher', 'Andrea Stefanus Slm', 28000, 10, 3),
+(106, 'Ragan Aplikasi Android Untuk UKM', 'Andi Publisher', 'Lukas Lukmana', 39000, 10, 3),
+(107, 'Dasar Pengolahan Citra dengan Delphi + CD (BP)', 'Andi Publisher', 'Adbul Kadir, Ir', 145000, 10, 3),
+(108, 'Langkah Mudah Menguasai SPSS 21 + cd', 'Andi Publisher', 'Cornelius Trihendradi', 59000, 10, 3),
+(109, 'Belajar Trik Tersembunyi dari Coreldraw X6', 'Andi Publisher', 'Galih Pranowo', 44000, 10, 2),
+(110, 'Menghubungkan Data Antar Program Microsoft Office 2013, Dilengkapi dengan Latihan Aplikatif Pengolahan Data Antar Program Office', 'Andi Publisher', 'Handoko Budisetyo', 53000, 10, 3),
+(111, 'Panduan Aplikatif dan Solusi : Desain Rumah Eksotis Dengan 3ds Max 2013 dan Adobe Photoshop CS6', 'Andi Publisher', 'Lukas Lukmana', 52000, 10, 3),
+(112, 'Pengenalan, Permasalahan dan Penanganan Hardware Komputer', 'Andi Publisher', 'Lukas Lukmana', 36000, 10, 3),
+(113, 'Panduan Aplikatif dan Solusi : Aplikasi Excel Untuk UKM', 'Andi Publisher', 'Lukas Lukmana', 36400, 10, 3),
+(114, 'Membangun Toko Online Dengan Opencart', 'Andi Publisher', 'Lukas Lukmana', 39000, 10, 3),
+(115, 'Physical Security, Mencegah Serangan Terhadao Pendukung Sistem Informasi ', 'Andi Publisher', 'Irwan Isa', 39000, 10, 3),
+(116, 'Belajar Sendiri Pasri Bisa Jquery + cd', 'Andi Publisher', 'Abdul Kadir, Ir', 75000, 10, 3),
+(117, 'Java Teori, Algoritma & Aplikasi', 'Andi Publisher', 'R.H. Slanipar', 99000, 10, 3),
+(118, 'Microsofr Access 2013 Untuk Perkantoran Modern', 'Andi Publisher', 'Lukas Lukmana', 43000, 10, 3),
+(119, 'Teori dan Praktek Penginderaan Jauh + cd', 'Andi Publisher', 'Indarto, STp, DEA', 89000, 10, 3),
+(120, 'The Secret Of Coreldraw', 'Andi Publisher', 'Handoko Budisetyo', 59000, 10, 2),
+(121, 'Kupas Tuntas Autodesk AutoCad 2D 2014', 'Andi Publisher', 'Handoko Budisetyo', 75000, 10, 3),
+(122, 'Most Wanted Tips Of Microsoft Word 2007, 2010, 2013', 'Andi Publisher', 'Ridwan Sanjaya', 32000, 10, 3),
+(123, 'Membuat Objek 3D Realistik Dengan CorelDraw X6, Teks 3D, Objek 3D, Ikon 3D, dan Logo 3D', 'Andi Publisher', 'Lukas Lukmana', 42000, 10, 3),
+(124, 'IMS(IP Multimedia Subsystem), Fraework dan Arsitektur Jaringan Telekomunikasi Masa Depan', 'Andi Publisher', 'M. Azwir', 49000, 10, 3),
+(125, 'Panduan Aplikatif dan Solusi : 30++ Amazing Jquery Example', 'Andi Publisher', 'Lukas Lukmana', 44000, 10, 3),
+(126, 'Panduan Aplikatif dan Solusi : 30++ Amazing Jquery Example', 'Andi Publisher', 'Lukas Lukmana', 44000, 10, 3),
+(127, 'Pengantar Teknologi Informasi', 'Andi Publisher', 'Tata Sutabri', 55000, 10, 3),
+(128, 'Panduan Aplikatif dan Solusi : Sistem Informasi Penjualan Online Untuk Tugas Akhir PHP dan Mysql', 'Andi Publisher', 'Lukas Lukmana', 49000, 10, 3),
+(129, 'Mahir dan Profesional Digital Painting', 'Andi Publisher', 'Lea Wilsen', 45000, 10, 3),
+(130, 'Sistem Operasi Cloud Computing dengan Windows Azure', 'Andi Publisher', 'Tutang, SE., MM.', 29000, 10, 2),
+(131, 'Pengenalan Sistem Informasi Ed. Revisi', 'Andi Publisher', 'Adbul Kadir, Ir', 125000, 10, 3),
+(132, 'Corel Draw For Advertising ', 'Andi Publisher', 'Aditya, ST.', 59500, 10, 3),
+(133, 'Home Security : Membuat Webcame Sebagai CCTV melalui Smartphone Android', 'Andi Publisher', 'Budi Cahyadi', 25000, 10, 3),
+(134, 'Tips dan Trik RPG Maker VX ACE', 'Andi Publisher', 'Lukas Lukmana', 49000, 10, 3),
+(135, 'Astah - Analisis Serta Perancangan Sistem Informasi Melalui Matlab+cd', 'Andi Publisher', 'Bmada Sanjaya WS', 89000, 10, 3),
+(136, 'Software Gratis Untuk Editing Foto', 'Andi Publisher', 'Andi Offset', 27000, 10, 3),
+(137, 'Komputasi Fisika Untuk Sains dan Teknik Menggunakan Matlab + cd', 'Andi Publisher', 'Mada Sanjaya WS', 89000, 10, 3),
+(138, 'Buat Toko Online Sendiri Dengan Opencart', 'Andi Publisher', 'Deny Setiawan', 25000, 10, 3),
+(139, 'Pengantar Teknologi Informasi Edisi Revisi', 'Andi Publisher', 'Abdul Kadir, Ir', 120000, 10, 3),
+(140, 'Buku Pintar Tune Up PC dan Hacking ', 'Andi Publisher', 'Lukas Lukmana', 49000, 10, 3),
+(141, 'Power Point 2013 Untuk Presentasi Kreatif Dengan Multimedia dan Animasi', 'Andi Publisher', 'Lukas Lukmana', 45000, 10, 3),
+(142, 'Cara Mudah Dan Cepat Belajar Pemrograman C#.Net', 'Andi Publisher', 'Adi Nugroho, ST., MM', 59000, 10, 2),
+(143, 'Membuat Game dengan Flash + cd', 'Andi Publisher', 'Handoko Budisetyo', 69000, 10, 3),
+(144, 'Membuat Komik Strip Online Gratis', 'Andi Publisher', 'Lukas Lukmana', 47000, 10, 3),
+(145, 'Panduan Merancang Rumah Sederhana dengan AutoCAD + cd', 'Andi Publisher', 'Rio Manuliang', 52500, 10, 3),
+(146, 'Mudah Belajar Mikrotik Menggunakan Metode Virtualisasi', 'Andi Publisher', 'Lukas Lukmana', 45000, 10, 3),
+(147, 'Mudah Membuat Game Android Berbasis Adobe AIR', 'Andi Publisher', 'Lukas Lukmana', 39500, 10, 2),
+(148, 'Kolaborasi PHP 5 dan Mysql Unruk Pengembangan Website + cd', 'Andi Publisher', 'Eko Priyo Utomo', 47000, 10, 3),
+(149, 'Mobile App Development With PhoneGap', 'Andi Publisher', 'Lukas Lukmana', 42000, 10, 2),
+(150, 'Sistem Basis Data Oracle 10g', 'Andi Publisher', 'Adi Nugroho, ST., MM', 79000, 10, 3),
+(151, 'From Zero to Pro : Pemrograman C++, Membahas Pemrograman Berorientasi Objek + cd', 'Andi Publisher', 'Abdul Kadir, Ir', 199000, 10, 1),
+(152, 'Pemrograman Java Tingkat Lanjut + CD', 'Andi Publisher', 'Agus Kurniawan', 69500, 10, 2),
+(153, 'Data Mining, Mengolah Data Menjadi Informasi Menggunakan Matlab', 'Andi Publisher', 'Eko Prasetyo', 129000, 10, 3),
+(154, 'Pengembangan Web dengan Jquery', 'Andi Publisher', 'Lukas Lukmana', 42000, 10, 3),
+(155, 'Panduan Aplikatif dan Solusi : Funny Cartoon Design With CorelDraw X6', 'Andi Publisher', 'Lukas Lukmana', 57000, 10, 3),
+(156, 'Panduan Aplikatif dan Solusi : Microsoft Word 2013 untuk Korespondensi Bisnis Modern', 'Andi Publisher', 'Lukas Lukmana', 47000, 10, 3),
+(157, 'Pengantar Elektronika dan Instrumensi, Pendekatan Project Adruino dan Android', 'Andi Publisher', '-', 89000, 10, 3),
+(158, '15 Cara Bikin Galeri Foro Online dengan PHP dan HTML', 'Andi Publisher', 'Lukas Lukmana', 48000, 10, 3),
+(159, 'Kreasi Efek 3D pada Objek Vektor dengan CorelDRAW untuk Pemula + cd', 'Andi Publisher', '-', 69000, 10, 3),
+(160, 'Mudah Membuat Game 3 Dimensi Menggunakan Unity 3D', 'Andi Publisher', 'Lukas Lukmana', 56000, 10, 3),
+(161, 'Kitab Troubleshooting, Buku Contekan Untuk Teknis Komputer', 'Andi Publisher', 'Andi Offset', 35000, 10, 3),
+(162, 'Adobe Audition CS6, Cara Mudah Buat Produksi Rekaman', 'Andi Publisher', 'Lukas Lukmana', 47000, 10, 2),
+(163, 'Soal dan Penyelesaian Struktur Data dengan Java + cd', 'Andi Publisher', 'R.H. Sianipar', 79000, 10, 2),
+(164, '(Creative Digital Fantasy) Kreasi Manipulasi Foto Digitaldengan Adobe Photoshop Untuk Pemula + cd', 'Andi Publisher', 'Handoko Budisetyo', 69000, 10, 3),
+(165, 'Shortcourse Series : RPG Maker VX Ace', 'Andi Publisher', 'Lukas Lukmana', 49000, 10, 3),
+(166, 'Beautiful Animation with CSS3 + cd', 'Andi Publisher', '-', 44000, 10, 3),
+(167, 'Panduan Aplikatif dan Solusi : Ragam Desain Animasi Banner Web dengan Adobe Flash CS6', 'Andi Publisher', 'Lukas Lukmana', 56000, 10, 3),
+(168, 'Panduan Praktis Pemrograman C# Bagi Pemula + cd', 'Andi Publisher', 'R.H. Sianipar', 95000, 10, 3),
+(169, 'Komputasi Numerik, Pemrograman MATLAB Untuk Metoda Numerik', 'Andi Publisher', 'Suarga, Drs., M.Sc., M', 160000, 10, 3),
+(171, 'Kreasi Company Prifile Interaktif dengan Flash Action 3.0 + cd', 'Andi Publisher', '-', 45000, 10, 3),
+(172, 'Panduan Aplikatif dan Solusi : Bikin Kartun Anime dengan CorelDRAW X', 'Andi Publisher', 'Lukas Lukmana', 65000, 10, 2),
+(173, 'Bikin Game Flash 3D dengan Aplikasi Gratisan + cd', 'Andi Publisher', '-', 59500, 10, 3),
+(174, 'Belajar Mudah : Konfigurasi RouterBoard, Mikrotik RB-750', 'Andi Publisher', 'Hardana, Skom.', 36000, 10, 3),
+(175, 'Kumpulan Top Mini Game dan Event RPG Maker VX Ace', 'Andi Publisher', '-', 65000, 10, 3),
+(176, 'Belajar Sendiri Pasti Bisa Program C++ (cd)', 'Andi Publisher', 'Abdul Kadir, Ir', 110000, 10, 1),
+(177, 'Panduan Lengkap dan Sistematis : Shooting yang benar!, Jadikan Video Anda Sekelas Karya Videografer Profesional', 'Andi Publisher', 'Januarius Andi Purba', 39000, 10, 3),
+(178, 'Teknik Dasar Videografi', 'Andi Publisher', 'Sarwo Nugroho', 49500, 10, 3),
+(179, 'Kupas Tuntas Adobe After Effect CS 6', 'Andi Publisher', 'Handoko Budisetyo', 65000, 10, 3),
+(180, 'Shortcourse Series : Adobe Audition CS 6', 'Andi Publisher', 'Lukas Lukmana', 43000, 10, 3),
+(181, 'Panduan Mudah Pemrograman Robot + cd', 'Andi Publisher', 'Taufik Dwi Septian S.', 49500, 10, 3),
+(182, 'Robot B.E.A.M., Biologi, Elektronics, Aesthetics, Mechanics + cd', 'Andi Publisher', 'Taufik Dwi Septian S.', 49000, 10, 3),
+(183, 'Robotika Modern, Teori dan Implementasi (Ed. Revisi)', 'Andi Publisher', 'Widodo Budhi Harto, S.', 47000, 10, 3),
+(184, 'Panduan Mudah Simulasi dan Praktek Mikrokontroller Arduino +cd', 'Andi Publisher', 'Muhammad Syahwii', 55000, 10, 2),
+(185, 'Panduan Praktis Perancangan dan Pemrograman Hasta Karya Robot + cd', 'Andi Publisher', 'Widodo Budhi Harto, S.', 54000, 10, 3),
+(186, 'SPSS 22 Pengolah Data Terpraktis', 'Andi Publisher', 'Dwi Priyatno', 49000, 10, 3),
+(187, 'Strategi Melakukan Riset, Kuantitatif, Kualitatif, Gabung', 'Andi Publisher', 'Jonathan Sarwono', 69000, 10, 3),
+(188, 'Analisis Data Penelitian dengan SPSS 22', 'Andi Publisher', 'Lukas Lukmana', 49500, 10, 3),
+(189, 'Presentasi Desain Arsitektur dengan Archid dan Photoshop + cd (FC)', 'Andi Publisher', 'Suparno Sastra N', 69000, 10, 3),
+(190, 'Desain Rancangan Bangunan 3D dan Interior dengan AutoCad + (cd)', 'Andi Publisher', 'Suparno Sastra N', 79000, 10, 2),
+(191, 'Medan Elektromagnetika ', 'Andi Publisher', '-', 59000, 10, 3),
+(192, 'Medan Elektromagnetik, Teori dan Contoh Soal', 'Andi Publisher', '-', 75000, 10, 3),
+(193, 'Riset Operasi dalam Pendekatan Algoritmis Edisi 2 + cd', 'Andi Publisher', 'Jong Jek Siang', 79000, 10, 3),
+(194, 'The Success Secret Of Taiwan''s WorldWide SME IN\r\n', 'Andi Publisher', 'Mohammad Suyanto\r\n', 150000, 10, 3),
+(195, 'Dasar Dasar Metodologi Penelitian ', 'Andi Publisher', 'Suwartono', 49000, 10, 3),
+(196, 'Sistem Komunikasi Satelit ( Teori dan Praktik )', 'Andi Publisher', 'Imam MPB', 45000, 10, 3),
+(197, 'Fisika Dasar Untuk Mahasiswa Ilmu - Ilmu Exacta, Teknik dan Kedokteran (Ed 2)', 'Andi Publisher', 'Bambang Murdaka Ek', 125000, 10, 3),
+(198, 'The X File : Trik Manipulasi File + cd', 'Andi Publisher', '-', 44000, 10, 3),
+(199, 'Aplikasi Fotogenic di Android', 'Andi Publisher', '-', 35000, 10, 3),
+(200, 'Instalasi Kilat Sistem Operasi ', 'Andi Publisher', '-', 39000, 10, 3),
+(201, '1 Jam Membuat Toko On Line dengan Joomla!-Virtuemart', 'Graha Ilmu', 'Muhammad Yusuf, S.T., M.MT., Achmad Yasid, S.Kom', 22800, 15, 2),
+(202, '10 Langkah Membuat Program Pengolah Citra Menggunakan Visual C#', 'Graha Ilmu', 'Usman Ahmad. Dr. Ir. M.Angr', 52800, 15, 2),
+(203, 'Aplikasi Mikroprosesor dalam Sistem Terintegrasi', 'Graha Ilmu', 'Saludin Muis, Dr., Ir., M. Kom', 79800, 15, 2),
+(204, 'Basis Data Dengan PostgreSQL', 'Graha Ilmu', 'Dewi Kusumawati, SKom.', 43800, 15, 2),
+(205, 'Cara Mudah Menguasai Komputer Forensik dan Aplikasi', 'Graha Ilmu', 'Firrar Utdirartatmo', 118800, 15, 2),
+(206, 'Fuzzy Multiatribut Decision Making (Fuzzy MADM)', 'Graha Ilmu', 'Sri Kusuma Dewi Dr.', 171800, 15, 2),
+(207, 'Global Positioning System ', 'Graha Ilmu', 'Saludin Muis, Dr., Ir., M. Kom', 74800, 15, 2),
+(208, 'Grafika Komputer dengan Borland C++ Builder Profes', 'Graha Ilmu', 'Syifaun Nafisah, S.T, M.T', 134800, 15, 2),
+(209, 'Harmless Hacking : Malware Anaysis dan Vulnerability', 'Graha Ilmu', 'Mada R. Perdana', 99800, 15, 2),
+(210, 'Identifikasi Pola Sinyal dengan Menggunakan Teknik Neural Networks', 'Graha Ilmu', 'Saludin Muis, Dr., Ir., M. Kom', 77800, 15, 2),
+(211, 'Informatika Kesehatan', 'Graha Ilmu', 'Sri Kusuma Dewi Dr.', 84800, 15, 2),
+(212, 'Interaksi Manusia & Komputer', 'Graha Ilmu', 'Indra Yatini B, S.Kom, M.Kom', 72800, 15, 2),
+(213, 'jaringan komputer', 'Graha Ilmu', 'Jonathan Lukas', 119800, 15, 1),
+(214, 'Jaringan Syaraf Tiruan Sebagai Alat Bantu Peramalan Harga Saham', 'Graha Ilmu', 'Saludin Muis, Dr., Ir., M. Kom', 179800, 15, 2),
+(215, 'Merancang USB I/O Board Menggunakan Chip PIC 18F4550', 'Graha Ilmu', 'R. Harso Adjie BE', 113800, 15, 2),
+(216, 'Metode Numerik', 'Graha Ilmu', 'Sangadji', 54800, 15, 2),
+(217, 'Neuro-Fuzzy Integrasi Sistem Fuzzy dan Jaringan Syaraf', 'Graha Ilmu', 'Sri Kusuma dewi Dr.', 196800, 15, 1),
+(218, 'Panduan Praktis Komputer Grafik dan Perancangan Game', 'Graha Ilmu', 'Fadlisyah ', 111800, 15, 2),
+(219, 'Pemrograman Database Berbasis Web', 'Graha Ilmu', 'Husni', 147800, 15, 2),
+(220, 'Pemrograman Database Menggunakan ADO.NET', 'Graha Ilmu', 'Tan Amelia, S.Kom, Mcp.', 108800, 15, 2),
+(221, 'Pemrograman Grafik 3D Menggunakan C & Open GL + CD', 'Graha Ilmu', 'Heriady', 91800, 15, 2),
+(222, 'Pemrograman Grafik dengan Java; Akses Database MIC', 'Graha Ilmu', 'Spits Warnars Harco LH', 118800, 15, 2),
+(223, 'Pemrograman Internet', 'Graha Ilmu', 'Foni Agus Setiawan, S.Kom', 102800, 15, 2),
+(224, 'Pemrograman Kamera PC Menggunakan Delphi', 'Graha Ilmu', 'Fadlisyah', 43800, 15, 2),
+(225, 'Pengantar Kriptografik Kuantum; Teknik Enkripsi Masa Depan', 'Graha Ilmu', 'Saludin Muis, Dr., Ir., M. Kom', 69800, 15, 2),
+(226, 'Pengembangan Aplikasi Web Menggunakan PHP Data Objects (PDO)', 'Graha Ilmu', 'Muhammad Miftakul Amin, S.Kom', 89800, 15, 2),
+(227, 'Pengolahan Citra Menggunakan Delphi', 'Graha Ilmu', 'Fadlisyah', 41800, 15, 2),
+(228, 'Pengolahan Sinyal Digital dengan Pemrograman Matlab', 'Graha Ilmu', 'Dadang Gunawan, Filbert Hilman Juwono', 124800, 15, 2),
+(229, 'Pengolahan Suara', 'Graha Ilmu', 'Fadlisyah', 63800, 15, 2),
+(230, 'Rancang Bangun Data Warehouse', 'Graha Ilmu', 'Mohammad Yazdi Pusadan, S. Kom., M. Eng', 29800, 15, 2),
+(231, 'Sistem Basis Data', 'Graha Ilmu', ' Djoko Hartomo', 59800, 15, 2),
+(232, 'Sistem Basis Data; Konsep dan Pendekatan Praktikum', 'Graha Ilmu', 'M.A. Ineke Pakereng, S.Kom, M.Kom', 86800, 15, 2),
+(233, 'Sistem Informasi Manajemen Pendidikan', 'Graha Ilmu', 'Yakub, S.Kom., M.Kom', 79800, 15, 2),
+(234, 'Sistem Kendali dengan Format Vektor-Matriks', 'Graha Ilmu', 'Rohani Jahja Widodo, Prof. Dr.', 74800, 15, 2),
+(235, 'Sistem Operasi', 'Graha Ilmu', 'Djoko Hartomo, Ir., S.Kom, M.Kom', 64800, 15, 2),
+(236, 'Sistem Pakar & Pengembangannya', 'Graha Ilmu', 'Sri Hartati, Dr., Msc, Phd', 74800, 15, 2),
+(237, 'Socket Programming', 'Graha Ilmu', 'Fajar Masya, Ir., MMSI', 64800, 15, 2),
+(238, 'Struktur Data untuk Grafika Komputer', 'Graha Ilmu', 'Soendoro Herlambang', 54800, 15, 2),
+(239, 'Teknik Akuisisi Target & Penjejakan Obyek; Aplikasi Kecerdasan Tiruan', 'Graha Ilmu', 'Saludin Muis, Dr., Ir., M. Kom', 119800, 15, 2),
+(240, 'Teknik-Teknik Optimasi Heuristik', 'Graha Ilmu', 'Intan Berlianty, S.T, M.T', 117800, 15, 2),
+(241, 'Teknologi Wimax; Untuk Komunikasi Digital Nirkabel Bidang Lebar', 'Graha Ilmu', 'Thomas Sri Widodo', 57800, 15, 2),
+(242, 'Teori Bahasa & Otomata', 'Graha Ilmu', 'Adi Sulistyo Nugroho', 49800, 15, 2),
+(243, 'Virus Komputer Teori dan Praktik', 'Graha Ilmu', 'Rindra Yusianto, S.Kom, M.T', 83800, 15, 2),
+(244, 'Visualisasi Sistem Tenaga Listrik Menggunakan PowerWorld Simulator', 'Graha Ilmu', 'Yusak Tanoto', 36800, 15, 2),
+(245, 'Wireless Sensor Networks', 'Graha Ilmu', 'Firdaus', 84800, 15, 1),
+(246, 'Tuntunan Praktis,Pengembangan Aplikasi Manajemen Database dg java ', 'Gava Media', 'Riyanto', 66000, 12, 4),
+(247, 'Kolaborasi Dahsyat ANDROID dengan PHP dan MySQL ', 'Lokomedia', 'Akhmad Dharma', 67000, 25, 1),
+(248, 'Trik Mudah Menguasai OOP dengan PHP', 'Lokomedia', 'Akhmad Dharma', 44500, 15, 3),
+(249, 'Yii Framework: Menguasai Framework PHP Terbaik ', 'Lokomedia', 'Sharive', 44500, 15, 3),
+(250, 'Cascading Style Sheet , Solusi Mempercantik Halaman Web', 'Gava Media', 'Bunafit Nugroho', 42000, 12, 3);
+
+--
+-- Indexes for dumped tables
+--
+
+--
+-- Indexes for table `listbuku`
+--
+ALTER TABLE `listbuku`
+ ADD PRIMARY KEY (`id`), ADD KEY `judul` (`judul`);
+
+--
+-- AUTO_INCREMENT for dumped tables
+--
+
+--
+-- AUTO_INCREMENT for table `listbuku`
+--
+ALTER TABLE `listbuku`
+MODIFY `id` int(4) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=251;
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;

@@ -1,0 +1,313 @@
+iframe{
+	line-height : 1.428571429;
+	vertical-align : middle;
+	background-color : #f9f9f9;
+	border : 1px solid #ccc;
+	border-radius : 5px;
+	font-size:17px;	
+}
+@media(max-height:667px){
+	iframe{
+	width : 90%;
+	height : 550px;
+	position :relative;
+	}
+}
+@media(min-height:668px){
+	iframe{
+	width : 90%;
+	height : 650px;
+	position : relative;
+	}
+}
+hr{
+border : 1px solid #ccc;
+}
+td{
+	padding-top:10px;
+}
+body{
+	font-family:"Lucida Bright";
+	background-color:#f9f9f9;
+	font-size:14px;
+}
+#kepala{
+ -ms-transform: rotate(-90deg); /* IE 9 */
+    -webkit-transform: rotate(-90deg); /* Chrome, Safari, Opera */
+	color:red;
+	margin-right: 9px;
+	margin-top:22px;
+	font-family : century gothic;
+	font-size : 16px;
+}
+.container2{
+	width:100%;
+	height:auto;
+	position:relative;
+	}
+.containernya{
+	padding : 20px;
+	width:100%;
+	height:auto;
+	position:relative;
+}
+.tabel-feedback{
+	clear : all;
+	width : 100%;
+	float : left;
+	
+}
+.tabel-feedback-kanan{
+	width : 70%;
+	padding-right:10px;
+}
+.tabel-feedback-kiri{
+width : 30%;
+}
+.form-control-kiri, .status-form {
+	height : 34px;
+	padding : 6px 5px;
+	line-height : 1.428571429;
+	vertical-align : middle;
+	background-color : #f9f9f9;
+	border : 1px solid #ccc;
+	border-radius : 5px;
+	font-size:17px;
+	font-family: "Century Gothic";
+	width:100%;
+	-webkit-transition:.4s border-color;
+}
+.form-control-kiri-rp{
+	height : 34px;
+	padding : 6px 5px;
+	line-height : 1.428571429;
+	vertical-align : middle;
+	background-color : #f9f9f9;
+	border : 1px solid #ccc;
+	border-radius : 5px;
+	font-size:17px;
+	font-family: "Century Gothic";
+	width:auto;
+	-webkit-transition:.4s border-color;
+}
+.button-tanggapan{
+	height : 50px;
+	padding : 6px 15px;
+	line-height : 1.428571429;
+	vertical-align : middle;
+	background-color : #f9f9f9;
+	border : 1px solid #ccc;
+	border-radius : 5px;
+	font-size:17px;
+	font-family: "Century Gothic";
+	width:auto;
+	transition:.4s border-color;
+}
+.button-tanggapan:focus, .button-tanggapan:active{
+	vertical-align : middle;
+	background-color : #f9f9f9;
+	border : 1px ;
+	border-color:#23A1D3;
+	border-radius : 5px;
+	transition:.4s border-color;
+	line-height : 1.428571429;
+}
+.button-tanggapan:hover{
+	vertical-align : middle;
+	background-color : #f9f9f9;
+	border : 1px ;
+	border-color:#23A1D3;
+	border-radius : 5px;
+	-webkit-transition:.4s border-color;
+	line-height : 1.428571429;
+}
+.form-control-kiri:focus, .form-control-kiri:active, .tanggapan-form:active, .tanggapan-form:focus, .status-form:active, .status-form:focus, .form-control-kiri-rp:focus, .form-control-kiri-rp:active{
+	vertical-align : middle;
+	background-color : #f9f9f9;
+	border : 1px ;
+	border-color:#23A1D3;
+	border-radius : 5px;
+	transition:.4s border-color;
+	line-height : 1.428571429;
+}
+ .tanggapan-form{
+	height : 200px;
+	padding : 6px 5px;
+	line-height : 1.428571429;
+	vertical-align : middle;
+	background-color : #f9f9f9;
+	border : 1px solid #ccc;
+	border-radius : 5px;
+	font-size:17px;
+	font-family: "Century Gothic";
+	width:100%;
+	transition:.4s border-color;
+ }
+ 
+ /*Login*/
+ .tabelLogin{
+	width : 400px;
+	position:relative;
+	margin-top:5px;
+ }
+ .containerLogin{
+	margin-top: 15%;
+	width:100%;
+	height:auto;
+	position:;
+	text-align:center;
+ }
+ 
+ /*halaman admin*/
+ .menuAdmin{
+	position : relative;
+	height : auto;
+	width : auto;
+	background-color : transparent;
+	padding : 10px 0;
+	font-size:17px;
+	background-color : transparent;
+ }
+ .menuAdmin a{
+	width : auto;
+	text-decoration:none;
+ }
+ .gambaradmin{
+	float:left;
+	margin-top:-7px;
+ }
+ /*Input buku*/
+ .containerinput{
+	width:50%;
+	height:auto;
+	position:relative;
+ }
+ 
+ /*katalog buku*/ 
+.caribuku{
+	height : 34px;
+	padding : 6px 5px;
+	line-height : 1.428571429;
+	vertical-align : middle;
+	background-color : #f9f9f9;
+	border : 1px solid #ccc;
+	border-radius : 5px;
+	font-size:17px;
+	font-family: "Century Gothic";
+	width:30%;
+	-webkit-transition:.4s border-color;
+ }
+ .caribuku:focus, .caribuku:active, .cariharga:focus, .cariharga:active{
+	vertical-align : middle;
+	background-color : #f9f9f9;
+	border : 1px ;
+	border-color:#23A1D3;
+	border-radius : 5px;
+	transition:.4s border-color;
+	line-height : 1.428571429;
+}
+ .teksnya{
+	margin-right : -12px;
+	height : 34px;
+	padding : 6px 15px 6px 10px;
+	vertical-align : middle;
+	background-color : white;
+	border : 1px solid #ccc;
+	border-radius : 5px;
+	font-size:17px;
+	width:20px;
+	height : auto;
+ }
+ .cariharga{
+	height : 34px;
+	padding : 6px 5px;
+	line-height : 1.428571429;
+	vertical-align : middle;
+	background-color : #f9f9f9;
+	border : 1px solid #ccc;
+	border-radius : 5px;
+	font-size:17px;
+	font-family: "Century Gothic";
+	width:150px;
+	-webkit-transition:.4s border-color;
+ }
+ #wajib{
+	position : fixed;
+	width:100%;
+	height:auto;
+	background-color : #f9f9f9;
+	margin-top : -8px;
+	padding-top : 8px;
+ }
+ .headernya{
+	position : relative;
+	width:100%;
+	height:auto;
+ }
+ .daftarBuku{
+	position : static;
+	width:100%;
+	padding-top : 93px;
+ }
+ .tabel_buku{
+	padding : 8px 3px ;
+ }
+ /*Kassir*/ 
+ .menuJual{
+	width : 30%;
+	height : auto;
+	padding : 10px;
+	background-color : #f9f9f9;
+	font-size:17px;
+	border : 1px solid #ccc;
+	border-radius : 5px;
+	margin-top:12%;
+ }
+ /*kotaksugest*/
+ @media(min-width:1213px){
+	#tb1{
+		width : 3%
+	}
+	#tb2{
+		width : 20%;	
+	}
+	#tb3{
+		width : 20%;
+	}
+	#tb4{
+		width : 15%;
+	}
+	#tb5{
+		width : 12%;
+	}
+	#tb6{
+		width : 6%;
+	}
+	#tb7{
+		width : 6%;
+	}
+}
+
+@media(max-width:1212px){
+	#tb1{
+		width : 42px;
+	}
+	#tb2{
+		width : 285px;
+	}
+	#tb3{
+		width : 285px;
+	}
+	#tb4{
+		width : 214px;
+	}
+	#tb5{
+		width : 171px;
+	}
+	#tb6{
+		width : 100px;
+	}
+	#tb7{
+		width : 91px;
+	}
+}
